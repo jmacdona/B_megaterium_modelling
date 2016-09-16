@@ -144,7 +144,7 @@ public:
         if (use_factorization == false){
             covar_inv = covar.inverse();
             det = covar.determinant();
-            normalising_term = 1.0 / std::sqrt(std::pow(M_PI, covar.rows()) * det);
+            normalising_term = 1.0 / std::sqrt(std::pow(2.0*M_PI, covar.rows()) * det);
             log_normalising_term = std::log(normalising_term);
         }
         else {
@@ -153,7 +153,7 @@ public:
             covar_inv = qr.inverse();
             logdet = qr.logAbsDeterminant();
             det = std::exp(logdet);
-            log_normalising_term = 0.5 * (-std::log(std::pow(M_PI, covar.rows())) - logdet);
+            log_normalising_term = 0.5 * (-std::log(std::pow(2.0*M_PI, covar.rows())) - logdet);
             normalising_term = std::exp(log_normalising_term);
         }
     }
