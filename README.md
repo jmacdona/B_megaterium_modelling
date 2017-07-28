@@ -1,3 +1,6 @@
+
+Please go to our new repository for a more general and better version of this software - [ODE\_MCMC\_tools](https://github.com/jmacdona/ODE_MCMC_tools)
+
 # Bayesian statistical inference of Bacillus megaterium cell-free transcription and translation using Markov chain Monte Carlo (MCMC)
 
 ## Requirements
